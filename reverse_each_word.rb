@@ -1,10 +1,7 @@
-reverse_each_word("Hello there, and how are you?")
-
-
 def reverse_each_word(string)
   array = string.split
 binding.pry
-  array.collect! {|word| word.reverse}
+  new_array = array.collect {|word| word.reverse}
 
-  return array.join
+  return new_array.join
 end
